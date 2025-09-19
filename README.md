@@ -221,11 +221,21 @@ The difficulty increases exponentially with each additional character. Use multi
 
 ## Examples
 
-See the `example/` directory for a complete Flutter application demonstrating vanity address generation with a user interface.
+The `example/` directory contains:
+
+- **`main.dart`** - Command-line examples showing basic usage and API features
+- **`flutter_app/`** - Complete Flutter application with interactive UI for vanity address generation
+
+Run the command-line example:
+```bash
+cd example
+dart pub get
+dart run main.dart
+```
 
 ## Compatibility
 
-This package is compatible with standard Solana tools and wallets. The generated keypairs use the same format as the Solana CLI and other Solana libraries.
+This package is compatible with standard Solana package for Flutter. The generated keypairs use the same format as the Espresso Cash Solana Package.
 
 ## License
 

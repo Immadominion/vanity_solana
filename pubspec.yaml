@@ -1,6 +1,6 @@
 name: vanity_solana
 description: Generate vanity Solana addresses with custom prefixes and suffixes using multi-core parallelism via Dart isolates.
-version: 0.1.0
+version: 0.1.1
 
 homepage: https://github.com/m2-labs/vanity-solana
 repository: https://github.com/m2-labs/vanity-solana

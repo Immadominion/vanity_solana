@@ -1,0 +1,10 @@
+name: vanity_solana_example
+description: Example demonstrating vanity_solana package usage
+publish_to: 'none'
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  vanity_solana:
+    path: ../
