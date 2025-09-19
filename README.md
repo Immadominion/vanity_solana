@@ -13,6 +13,38 @@ Generate Solana addresses that start or end with custom prefixes and suffixes. U
 - Compatible with standard Solana keypair format
 - No external dependencies beyond the Solana package
 
+## Real-World Examples
+
+Vanity addresses are widely used across the Solana ecosystem for branding and memorability:
+
+### Popular Vanity Addresses
+- **`So11111111111111111111111111111111111111112`** - Wrapped SOL (WSOL) token mint
+- **`EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`** - USDC token mint (starts with "EP")
+- **`DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263`** - Bonk token mint (starts with "Dez")
+- **`JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN`** - Jupiter token mint (starts with "JUP")
+
+### Use Cases
+- **DeFi Protocols**: Jupiter, Raydium, and other DEXs use vanity addresses for their program IDs
+- **NFT Collections**: Projects create memorable mint addresses for their collections  
+- **Token Mints**: Custom tokens often use vanity addresses that reflect their brand
+- **DAOs & Organizations**: Governance programs with recognizable address patterns
+- **Personal Wallets**: Users create addresses matching their usernames or brands
+
+### Example Patterns
+```dart
+// Generate a Jupiter-style address starting with "JUP"
+VanityConfig(prefix: 'JUP', caseSensitive: true)
+
+// Generate a DeFi protocol address starting with "DEX"  
+VanityConfig(prefix: 'DEX', caseSensitive: false)
+
+// Generate a token mint ending with specific digits
+VanityConfig(suffix: '2024', caseSensitive: false)
+
+// Generate a DAO address with both prefix and suffix
+VanityConfig(prefix: 'DAO', suffix: 'GOV', caseSensitive: false)
+```
+
 ## Installation
 
 Add this package to your `pubspec.yaml`:
