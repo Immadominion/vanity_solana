@@ -1,0 +1,27 @@
+name: vanity_solana
+description: Generate vanity Solana addresses with custom prefixes and suffixes using multi-core parallelism via Dart isolates.
+version: 0.1.0
+
+homepage: https://github.com/m2-labs/vanity-solana
+repository: https://github.com/m2-labs/vanity-solana
+issue_tracker: https://github.com/m2-labs/vanity-solana/issues
+
+topics:
+  - solana
+  - blockchain
+  - cryptocurrency
+  - vanity-address
+  - address-generator
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  solana: ^0.31.2
+  meta: ^1.12.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  test: ^1.24.0

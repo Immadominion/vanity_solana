@@ -1,0 +1,25 @@
+name: vanity_solana_example
+publish_to: 'none'
+description: Simple example app demonstrating vanity_solana_dart usage.
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.7.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  vanity_solana:
+    path: ../..
+
+  # UI helpers
+  gap: ^3.0.1
+  flutter_spinkit: ^5.2.1
+  qr_flutter: ^4.1.0
+
+dev_dependencies:
+  lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
